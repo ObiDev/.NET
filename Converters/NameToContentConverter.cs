@@ -8,7 +8,7 @@ public class NameToContentConverter : IValueConverter
     {
         if (value != null && value != "")
         {
-            Type userControl = Type.GetType(System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + ".View.MainWindow.UserControls.Details.Custom." + value, null, null);
+            Type userControl = Type.GetType(System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + ".path to control/viewmodel." + value, null, null);
             return Activator.CreateInstance(userControl);
         }
 
